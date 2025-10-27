@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>XboxLoad</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/styles.css" />
 </head>
-<body>
-  <div class="container">
-    <h1>Welcome to XboxLoad</h1>
-    <p>Load, Redeem, and Play Instantly</p>
-    <button onclick="window.location='/redeem'">Redeem Gift Card</button>
-    <button onclick="window.location='/signin'">Load on Game</button>
-  </div>
+<body class="home-page">
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Xbox_one_logo.svg" alt="Xbox logo" />
+      <span>XboxLoad</span>
+    </div>
+    <nav>
+      <a href="/signup">Sign Up</a>
+      <a href="/signin">Log In</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>XboxLoad</span></h1>
+      <p>Load, Redeem, and Play Instantly</p>
+      <div class="buttons">
+        <a href="/redeem" class="btn green">Redeem Gift Card</a>
+        <a href="#" class="btn dark">Load on Game</a>
+      </div>
+    </div>
+  </main>
+
+  <section class="games">
+    <div class="game-card"><img src="https://i.imgur.com/RG0f5bI.jpeg" alt="Halo"></div>
+    <div class="game-card"><img src="https://i.imgur.com/PlvP7iX.jpeg" alt="Forza"></div>
+    <div class="game-card"><img src="https://i.imgur.com/sbFGzGJ.jpeg" alt="COD Warzone"></div>
+  </section>
+
+  <footer>
+    <p>Join XboxLoad — your next level of gaming starts here.</p>
+  </footer>
+
 </body>
 </html>
