@@ -1,65 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0d0d29, #1e1e60, #4b0082);
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #101010;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  text-align: center;
-  animation: fadeIn 1.5s ease-in-out;
+  margin-top: 100px;
 }
 
-nav h1 {
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
-nav span {
-  color: #ffcc00;
-}
-
-.hero h2 {
-  font-size: 2.2rem;
-  margin: 20px 0 10px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  opacity: 0.9;
+input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
 }
 
 button {
-  margin-top: 25px;
-  padding: 12px 30px;
+  padding: 10px 20px;
+  background-color: #107C10;
+  color: white;
   border: none;
-  background: #ffcc00;
-  color: #1e1e60;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 5px;
+  margin-left: 10px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: 0.2s;
 }
 
 button:hover {
-  transform: scale(1.1);
-  background: #fff;
+  background-color: #0d5e0d;
 }
 
-footer {
-  margin-top: 40px;
-  font-size: 0.8rem;
-  opacity: 0.7;
+.btn {
+  display: inline-block;
+  background-color: #107C10;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.btn.small {
+  display: block;
+  width: 150px;
+  margin: 20px auto;
+}
+
+#resultMessage {
+  margin-top: 15px;
+  font-weight: bold;
 }
