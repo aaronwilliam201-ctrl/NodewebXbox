@@ -1,1 +1,3 @@
-console.log("Frontend JS loaded!");
+document.getElementById('clickBtn').addEventListener('click', () => {
+  alert('Hello from NodeWeb Xbox!');
+});
