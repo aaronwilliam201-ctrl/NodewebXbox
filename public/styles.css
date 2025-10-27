@@ -1,6 +1,22 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #f2f2f2;
-  padding-top: 50px;
+  background: linear-gradient(to bottom right, #2b1055, #7597de);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
