@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>XboxLoad — Welcome</title>
-  <link rel="stylesheet" href="/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xbox Gift Portal</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="dark">
-  <div class="container">
-    <header>
-      <h1>Welcome to <span class="xbox">XboxLoad</span></h1>
-      <p>Load, Redeem, and Play Instantly ⚡</p>
-    </header>
-
-    <div class="button-group">
-      <a href="/redeem" class="btn green">Redeem Gift Card</a>
-      <a href="/signin" class="btn outline">Load on Game</a>
-    </div>
-
-    <footer>
-      <p>Powered by Node.js + Render</p>
-    </footer>
+<body>
+  <div class="gift-card">
+    <h1>Welcome to XboxLoad</h1>
+    <p>Load, Redeem, and Play Instantly ⚡</p>
+    <button onclick="window.location.href='/redeem'">Redeem Gift Card</button>
+    <br><br>
+    <button onclick="window.location.href='/signin'">Load on Account</button>
   </div>
+
+  <footer>
+    <p>Powered by Node.js + Render</p>
+  </footer>
 </body>
 </html>
