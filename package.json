@@ -1,7 +1,7 @@
 {
   "name": "nodewebxbox",
   "version": "1.0.0",
-  "description": "Xbox gift card web app",
+  "description": "XboxLoad style Node.js web app",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
