@@ -1,39 +1,121 @@
+/* General */
 body {
-  background-color: #0f0f0f;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
 }
 
-.container {
-  margin-top: 100px;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-button {
-  background-color: #107c10;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 25px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 10px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-button:hover {
-  background-color: #0d660d;
+.logo img {
+  height: 28px;
 }
 
-input {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  width: 250px;
-}
-
-a {
-  color: #9bf00b;
+.navbar nav a {
+  color: #fff;
+  margin-left: 20px;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #9bf00b;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), 
+    url('https://i.imgur.com/TE0r5wL.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+}
+
+.hero-content h1 span {
+  color: #9bf00b;
+}
+
+.hero-content p {
+  margin: 10px 0 25px;
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.btn.green {
+  background-color: #9bf00b;
+  color: #000;
+}
+
+.btn.green:hover {
+  background-color: #baff0f;
+}
+
+.btn.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.btn.dark:hover {
+  background-color: #333;
+}
+
+/* Game Section */
+.games {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: #111;
+}
+
+.game-card img {
+  width: 200px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.game-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #0b0b0b;
+  color: #999;
+  font-size: 0.9em;
 }
