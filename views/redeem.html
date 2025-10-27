@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Redeem - XboxLoad</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redeem Gift Card | XboxLoad</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="dark">
   <div class="container">
-    <h2>Redeem Gift Card</h2>
-    <input type="text" placeholder="Enter code"><br><br>
-    <button>Redeem</button><br>
-    <a href="/">Back to Home</a>
+    <h1>🎁 Redeem Your Gift Card</h1>
+    <form id="redeemForm">
+      <input type="text" id="giftCode" placeholder="Enter gift card code" required>
+      <button type="submit" class="btn green">Redeem</button>
+    </form>
+    <a href="/" class="back">⬅ Back to Home</a>
   </div>
+
+  <script>
+    document.getElementById('redeemForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const code = document.getElementById('giftCode').value.trim();
+      alert(code ? `Code ${code} redeemed! ✅` : 'Please enter a valid code');
+    });
+  </script>
 </body>
 </html>
