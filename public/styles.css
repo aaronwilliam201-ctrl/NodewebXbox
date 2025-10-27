@@ -1,205 +1,86 @@
-/* General */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0e0e0e;
-  color: #fff;
-}
-
-/* Navbar */
-.navbar {
+body.dark {
+  background: #0e1117;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  height: 28px;
-}
-
-.navbar nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.navbar nav a:hover {
-  color: #9bf00b;
-}
-
-/* Hero Section */
-.hero {
-  height: 80vh;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), 
-    url('https://i.imgur.com/TE0r5wL.jpeg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
   text-align: center;
-  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
 }
 
-.hero-content h1 {
-  font-size: 2.5em;
+h1 {
+  color: #fff;
 }
 
-.hero-content h1 span {
-  color: #9bf00b;
+.xbox {
+  color: #107c10;
 }
 
-.hero-content p {
-  margin: 10px 0 25px;
-  font-size: 1.1em;
-  color: #ccc;
+p {
+  color: #bbb;
 }
 
-/* Buttons */
+.button-group {
+  margin-top: 30px;
+}
+
 .btn {
-  display: inline-block;
-  padding: 12px 25px;
-  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  padding: 12px 18px;
   text-decoration: none;
-  margin: 5px;
-  font-weight: 600;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
 .btn.green {
-  background-color: #9bf00b;
-  color: #000;
+  background: #107c10;
+  color: #fff;
 }
 
 .btn.green:hover {
-  background-color: #baff0f;
+  background: #0e6e0e;
 }
 
-.btn.dark {
-  background-color: #222;
-  color: #fff;
+.btn.outline {
+  border: 2px solid #107c10;
+  color: #107c10;
 }
 
-.btn.dark:hover {
-  background-color: #333;
+.btn.outline:hover {
+  background: #107c10;
+  color: white;
 }
 
-/* Game Section */
-.games {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px;
-  background-color: #111;
-}
-
-.game-card img {
-  width: 200px;
-  height: 120px;
-  border-radius: 8px;
-  object-fit: cover;
-  transition: transform 0.3s;
-}
-
-.game-card img:hover {
-  transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 30px;
-  background-color: #0b0b0b;
-  color: #999;
-  font-size: 0.9em;
-}
-/* ===== SIGN-IN PAGE ===== */
-.signin-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #0e0e0e;
-  color: #fff;
-}
-
-.signin-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.signin-card {
-  background-color: #111;
-  padding: 40px 50px;
-  border-radius: 12px;
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-}
-
-.signin-logo img {
-  width: 40px;
-  margin-bottom: 10px;
-}
-
-.signin-logo h2 {
-  color: #9bf00b;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.signin-form input {
-  width: 100%;
-  padding: 12px;
+input {
+  width: 80%;
+  padding: 10px;
   margin: 10px 0;
+  border-radius: 5px;
   border: none;
-  border-radius: 6px;
-  background-color: #222;
-  color: #fff;
+  outline: none;
   font-size: 1em;
 }
 
-.signin-form input:focus {
-  outline: 2px solid #9bf00b;
-}
-
-.signin-form button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  border: none;
-  border-radius: 6px;
-  background-color: #9bf00b;
-  color: #000;
-  font-size: 1.1em;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.signin-form button:hover {
-  background-color: #baff0f;
-}
-
-.signup-text {
-  margin-top: 20px;
-  color: #bbb;
-  font-size: 0.9em;
-}
-
-.signup-text a {
-  color: #9bf00b;
+.back, .signup a {
+  color: #62b2ff;
   text-decoration: none;
 }
 
-.signup-text a:hover {
+.back:hover, .signup a:hover {
   text-decoration: underline;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
 }
